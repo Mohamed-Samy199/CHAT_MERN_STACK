@@ -1,0 +1,20 @@
+.online-users {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        height: 0.3rem;
+
+        &-thumb {
+            background-color: #ffffff39;
+            height: 0.2rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .avatar {
+        img {
+            height: 2.5rem;
+        }
+    }
+}

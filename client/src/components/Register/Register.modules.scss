@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.register {
+    height: 100vh;
+    width: 100vw;
+    background-color: $bgColor;
+
+    form {
+        background-color: #00000076;
+        padding: 3rem 5rem;
+        border-radius: 2rem;
+
+        img {
+            height: 5rem;
+        }
+
+        span {
+            a {
+                color: $mainColor !important;
+
+                &:hover {
+                    color: $secondColor !important;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.setAvatar {
+    height: 100vh;
+    width: 100vw;
+    background-color: $bgColor;
+
+    .loader {
+        max-inline-size: 100%;
+    }
+
+    .avatar {
+        border: .4rem solid transparent;
+        padding: .4rem;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            height: 6rem;
+        }
+    }
+
+    .selected {
+        border: .4rem solid $mainColor;
+    }
+}

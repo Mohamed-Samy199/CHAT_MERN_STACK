@@ -1,0 +1,25 @@
+.chat-input-container {
+    // body.mobile &, body[data-uia="ios"] &{-webkit-box-flex:1;display:-webkit-box;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: center;
+    background-color: #080420;
+    padding: 0 2rem;
+    padding-bottom: .3rem;
+
+    .input-container {
+        border-radius: 2rem;
+
+        input {
+            width: 90% !important;
+            height: 60%;
+        }
+
+    }
+
+}
+
+.EmojiPickerReact {
+    position: absolute !important;
+    top: -350px !important;
+}

@@ -1,0 +1,80 @@
+@import "../../index.scss";
+
+.contact-container {
+    display: grid;
+    grid-template-rows: 9% 12% 64% 15%;
+    overflow: hidden;
+    min-height: 85vh;
+    max-height: 85vh;
+    background-color: #080420;
+
+    .brand {
+        img {
+            height: 2rem;
+        }
+    }
+
+    .contacts {
+        gap: .8rem;
+        overflow: auto;
+        padding-top: 11.5rem;
+
+        &::-webkit-scrollbar {
+            width: 0.3rem;
+
+            &-thumb {
+                background-color: #ffffff39;
+                width: 0.2rem;
+                border-radius: 1rem;
+            }
+        }
+
+        .contact {
+            background-color: #ffffff34;
+            min-height: 5rem;
+            position: relative;
+            cursor: pointer;
+            width: 90%;
+            border-radius: 0.2rem;
+            padding: 0.4rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s ease-in-out;
+
+            .this-user-notifications {
+                display: flex;
+                background: rgb(0, 219, 0);
+                height: 20px;
+                width: 20px;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .avatar {
+                img {
+                    height: 3rem;
+                }
+            }
+        }
+
+        .selected {
+            background-color: #9186f3;
+        }
+    }
+
+    .current-user {
+        background-color: #0d0d30;
+
+        .avatar {
+            img {
+                height: 4rem;
+                max-inline-size: 100%;
+            }
+        }
+    }
+}

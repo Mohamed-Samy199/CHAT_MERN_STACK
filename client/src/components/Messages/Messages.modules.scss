@@ -1,0 +1,37 @@
+.messages {
+    &::-webkit-scrollbar {
+        width: .5rem;
+        background-color: #080420;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #997af0;
+        width: .3rem;
+        border-radius: 1rem;
+    }
+
+    .message {
+        .content {
+            max-width: 40%;
+            overflow-wrap: break-word;
+            color: #d1d1d1;
+            font-size: 20px;
+        }
+    }
+
+    .sended {
+        justify-content: end;
+
+        .content {
+            background-color: #4f04ff21;
+        }
+    }
+
+    .recieved {
+        justify-content: start;
+
+        .content {
+            background-color: #daa7fd20;
+        }
+    }
+}
